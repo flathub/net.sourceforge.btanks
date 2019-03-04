@@ -1,0 +1,11 @@
+--- btanks-0.9.8083.orig/clunk/source.cpp
++++ btanks-0.9.8083/clunk/source.cpp
+@@ -30,6 +30,8 @@
+ #if defined _MSC_VER || __APPLE__ || __FreeBSD__
+ #	define pow10f(x) powf(10.0f, (x))
+ #	define log2f(x) (logf(x) / M_LN2)
++#else
++#	define pow10f(x) exp10f(x)
+ #endif
+ 
+ using namespace clunk;
