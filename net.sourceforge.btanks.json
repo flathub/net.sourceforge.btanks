@@ -67,11 +67,15 @@
                     "type": "patch",
                     "path": "btanks-gcc47.patch",
                     "strip-components": 0
-                }, 
+                },
                 {
                     "type": "patch",
                     "path": "btanks-lua-52.patch"
-                },               
+                },
+                {
+                    "type": "patch",
+                    "path": "btanks-pow10f.patch"
+                },
                 {
                     "type": "file",
                     "path": "btanks-Makefile",
