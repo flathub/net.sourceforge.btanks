@@ -27,7 +27,7 @@
         "shared-modules/smpeg/smpeg-0.4.5.json",
         "shared-modules/SDL/SDL_image-1.2.12.json",
         "shared-modules/lua5.3/lua-5.3.5.json",
-	"shared-modules/python2.7/python-2.7.json",
+        "shared-modules/python2.7/python-2.7.json",
         {
             "name": "scons",
             "no-autogen": true,
@@ -90,6 +90,23 @@
                     "type": "file",
                     "path": "btanks.desktop"
                 }
+            ]
+        },
+        {
+            "name": "btanks-icons",
+            "buildsystem": "simple",
+            "sources": [
+                {
+                    "type": "file",
+                    "path": "icon_64.png"
+                },
+                {
+                    "type": "file",
+                    "path": "icon_128.png"
+                }
+            ],
+            "build-commands": [
+                "for icon_size in 64 128; do install -d /app/share/icons/hicolor/${icon_size}x${icon_size}/apps; install -m644 icon_${icon_size}.png /app/share/icons/hicolor/${icon_size}x${icon_size}/apps/net.sourceforge.btanks.png; done"
             ]
         }
     ]
