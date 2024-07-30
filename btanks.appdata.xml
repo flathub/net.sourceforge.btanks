@@ -4,24 +4,31 @@
 EmailAddress: jessefrgsmith@yahoo.ca
 SentUpstream: 2014-09-17
 -->
-<application>
-  <id type="desktop">btanks.desktop</id>
+<component type="desktop-application">
+  <id>net.sourceforge.btanks</id>
   <name>Battle Tanks</name>
   <project_license>GPL-2.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <summary>A fun filled scrolling game with battle tanks</summary>
+  <developer id="net.sourceforge.btanks">
+    <name>megath</name>
+  </developer>
   <description>
     <p>
       Battle tanks is a fun filled old school style scrolling battle tank game.
-    </p>
-    <p>
       It has original cartoon style graphics and sound track and is multiplayer
       focused.
       Choose from 3 different vehicles and destroy your enemies using a large
       assortment of weapons.
     </p>
   </description>
-  <url type="homepage">http://btanks.sourceforge.net/</url>
+  <url type="homepage">https://btanks.sourceforge.net/</url>
+  <url type="vcs-browser">https://svn.code.sf.net/p/btanks/code/trunk/</url>
+  <launchable type="desktop-id">net.sourceforge.btanks.desktop</launchable>
+  <provides>
+    <id>net.sourceforge.btanks.desktop</id>
+    <id>btanks.desktop</id>
+  </provides>
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">moderate</content_attribute>
     <content_attribute id="violence-bloodshed">mild</content_attribute>
@@ -30,8 +37,14 @@ SentUpstream: 2014-09-17
     <release version="0.9" date="2009-12-30" />
   </releases>
   <screenshots>
-    <screenshot type="default">https://raw.githubusercontent.com/hughsie/fedora-appstream/master/screenshots-extra/btanks/a.png</screenshot>
-    <screenshot>https://raw.githubusercontent.com/hughsie/fedora-appstream/master/screenshots-extra/btanks/b.png</screenshot>
-    <screenshot>https://raw.githubusercontent.com/hughsie/fedora-appstream/master/screenshots-extra/btanks/c.png</screenshot>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/hughsie/fedora-appstream/7560732ef1a7f85c8f5d7857deb9d4bdab0bda35/screenshots-extra/btanks/a.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/hughsie/fedora-appstream/7560732ef1a7f85c8f5d7857deb9d4bdab0bda35/screenshots-extra/btanks/b.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/hughsie/fedora-appstream/7560732ef1a7f85c8f5d7857deb9d4bdab0bda35/screenshots-extra/btanks/c.png</image>
+    </screenshot>
   </screenshots>
-</application>
+</component>
